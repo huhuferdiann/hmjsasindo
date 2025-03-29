@@ -39,21 +39,26 @@ header {
 
 
 nav {
-    background-color: #5a3e2b; /* Warna latar belakang navbar */
-    padding: 10px 0; /* Jarak atas-bawah navbar */
+    background-color: #5a3e2b;
+    padding: 10px 0;
+    width: 100%;
+    position: fixed; /* Biar tetap di atas */
+    top: 0;
+    left: 0;
+    z-index: 1000;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center; /* Posisikan menu di tengah */
-    align-items: center; /* Pastikan item sejajar */
+    justify-content: center;
+    align-items: center;
     padding: 0;
     margin: 0;
 }
 
 nav ul li {
-    margin: 0 20px; /* Jarak antar menu lebih proporsional */
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -62,12 +67,12 @@ nav ul li a {
     font-size: 18px;
     font-weight: bold;
     padding: 10px 15px;
-    border-radius: 5px; /* Agar menu sedikit membulat */
+    border-radius: 5px;
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #7a4e39; /* Warna hover lebih kontras */
+    background-color: #7a4e39;
 }
 
 
