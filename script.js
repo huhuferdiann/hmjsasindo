@@ -1,37 +1,45 @@
-// Efek Animasi Saat Scroll
+// ========== Efek Fade-in Saat Halaman Dimuat ==========
 document.addEventListener("DOMContentLoaded", function () {
-    const fadeElements = document.querySelectorAll(".fade-in");
-    const slideElements = document.querySelectorAll(".slide-up");
+    document.body.classList.add("show");
 
-    function checkScroll() {
-        let triggerBottom = window.innerHeight * 0.85;
-
-        fadeElements.forEach(el => {
-            let boxTop = el.getBoundingClientRect().top;
-            if (boxTop < triggerBottom) {
-                el.classList.add("show");
-            }
-        });
-
-        slideElements.forEach(el => {
-            let boxTop = el.getBoundingClientRect().top;
-            if (boxTop < triggerBottom) {
-                el.classList.add("show");
-            }
-        });
-    }
-
-    window.addEventListener("scroll", checkScroll);
-    checkScroll();
+    // Efek Fade-in untuk Elemen dengan Kelas 'fade-in-left' dan 'fade-in-right'
+    let fadeElements = document.querySelectorAll(".fade-in-left, .fade-in-right");
+    fadeElements.forEach((el) => {
+        el.classList.add("show");
+    });
 });
 
-// Validasi Form Kontak
-document.addEventListener("DOMContentLoaded", function () {
-    const form = document.querySelector(".contact-form");
+// ========== Efek Navbar Berubah Warna Saat Scroll ==========
+window.addEventListener("scroll", function() {
+    const navbar = document.querySelector(".navbar");
+    if (window.scrollY > 50) {
+        navbar.style.background = "#3a2b24";
+    } else {
+        navbar.style.background = "#4a3f35";
+    }
+});
 
-    form.addEventListener("submit", function (e) {
-        e.preventDefault();
-        alert("Pesan Anda telah dikirim!");
-        form.reset();
+// ========== Animasi Slider Gambar di Hero Section ==========
+let slider = document.querySelector(".hero-slider");
+let slides = slider.querySelectorAll("img");
+let index = 0;
+
+function nextSlide() {
+    index = (index + 1) % slides.length;
+    slider.style.transform = `translateX(-${index * 100}%)`;
+}
+
+setInterval(nextSlide, 5000); // Ganti gambar setiap 5 detik
+
+// ========== Efek Hover untuk Ikon Media Sosial ==========
+let socialIcons = document.querySelectorAll(".social-icons img");
+
+socialIcons.forEach((icon) => {
+    icon.addEventListener("mouseover", () => {
+        icon.style.animation = "shake 0.3s ease-in-out";
+    });
+
+    icon.addEventListener("mouseout", () => {
+        icon.style.animation = "none";
     });
 });
