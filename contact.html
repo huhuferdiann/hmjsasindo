@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - HMJ Sastra Indonesia</title>
+    <title>Kontak - HMJ Sastra Indonesia</title>
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
 </head>
 <body>
 
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">HMJ Sastra Indonesia</div>
+        <div class="logo">
+            <a href="index.html">HMJ Sastra Indonesia</a>
+        </div>
         <ul class="nav-links">
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
@@ -20,17 +21,42 @@
     </nav>
 
     <!-- Contact Section -->
-    <section class="contact">
-        <div class="container">
-            <h1 class="fade-in">Hubungi Kami</h1>
-            <form class="contact-form slide-up">
-                <input type="text" placeholder="Nama Anda" required>
-                <input type="email" placeholder="Email Anda" required>
-                <textarea placeholder="Pesan Anda" required></textarea>
-                <button type="submit">Kirim Pesan</button>
-            </form>
+    <section class="contact-page">
+        <h1 class="fade-in-left">Hubungi Kami</h1>
+        <div class="contact-container">
+            <div class="contact-info fade-in-left">
+                <img src="contact-image.jpg" alt="Hubungi Kami">
+            </div>
+            <div class="contact-details fade-in-right">
+                <p>Email: <a href="mailto:hmjsastra@example.com">hmjsastra@example.com</a></p>
+                <p>Telepon: <a href="tel:+6281234567890">+62 812-3456-7890</a></p>
+                <p>Alamat: Jl. Sastra No. 10, Universitas XYZ</p>
+            </div>
         </div>
     </section>
+
+    <!-- Social Media Section -->
+    <section class="social-media">
+        <h2>Ikuti Kami</h2>
+        <div class="social-icons">
+            <a href="https://instagram.com/hmjsastra" target="_blank">
+                <img src="instagram-icon.png" alt="Instagram">
+            </a>
+            <a href="https://twitter.com/hmjsastra" target="_blank">
+                <img src="twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://tiktok.com/@hmjsastra" target="_blank">
+                <img src="tiktok-icon.png" alt="TikTok">
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 HMJ Sastra Indonesia</p>
+    </footer>
+
+    <script src="script.js"></script>
 
 </body>
 </html>
