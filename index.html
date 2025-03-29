@@ -1,105 +1,28 @@
-/* Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMJ Sastra Indonesia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
 
-/* Navbar */
-nav {
-    background: #6A1B9A; /* Warna ungu lebih elegan */
-    padding: 12px 0;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-}
+    <header>
+        <div class="slider">
+            <div class="slides">
+                <img src="img1.jpg" alt="Slide 1">
+                <img src="img2.jpg" alt="Slide 2">
+                <img src="img3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="overlay">
+            <h1>Himpunan Mahasiswa Sastra Indonesia</h1>
+            <h2>Universitas XYZ</h2>
+            <button onclick="goToDetails()">Explore Our Association</button>
+        </div>
+    </header>
 
-.nav-links {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap; /* Agar responsif */
-}
-
-.nav-links li {
-    margin: 5px 10px;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 8px 12px;
-    transition: 0.3s;
-    font-size: 16px;
-}
-
-.nav-links a:hover {
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 5px;
-}
-
-/* Hero Section */
-.hero {
-    min-height: 100vh;
-    background: linear-gradient(to bottom, #EDE7F6, #D1C4E9); /* Gradasi lebih halus */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 80px 20px;
-}
-
-.logo {
-    width: 120px;
-    margin-bottom: 15px;
-}
-
-h1 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #4A148C;
-    text-transform: uppercase;
-    max-width: 90%;
-}
-
-p {
-    font-size: 16px;
-    color: #6A1B9A;
-    margin: 10px 0;
-    max-width: 80%;
-}
-
-.btn {
-    background: #6A1B9A;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 15px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: #7B1FA2;
-}
-
-/* Responsif untuk HP */
-@media screen and (max-width: 768px) {
-    .nav-links {
-        flex-direction: column;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    .logo {
-        width: 100px;
-    }
-}
+    <script src="script.js"></script>
+</body>
+</html>
