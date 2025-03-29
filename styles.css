@@ -222,3 +222,36 @@ nav ul li a:hover {
     color: #8b5e3c;
     margin-bottom: 20px;
 }
+
+/* KALENDER */
+.kalender-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.kalender-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #5a3e2b;
+}
+
+.kalender {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.kalender th, .kalender td {
+    border: 1px solid #8b5e3c;
+    padding: 10px;
+    text-align: center;
+}
+
+.kalender th {
+    background-color: #5a3e2b;
+    color: white;
+}
+
+.kalender tr:nth-child(even) {
+    background-color: #f5f0e1;
+}
