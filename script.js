@@ -18,3 +18,18 @@ document.addEventListener("DOMContentLoaded", function() {
     // Console log untuk melihat interaksi
     console.log("Wah ada pengunjung nih. HALOOO!!!");
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+    let openSound = document.getElementById("openSound");
+    let closeSound = document.getElementById("closeSound");
+
+    // Mainkan suara saat halaman buku mulai terbuka
+    setTimeout(() => {
+        openSound.play();
+    }, 200); // Sesuaikan dengan waktu animasi
+
+    // Mainkan suara saat halaman selesai terbuka (efek halaman terakhir)
+    setTimeout(() => {
+        closeSound.play();
+    }, 1800); // Sesuaikan dengan waktu animasi
+});
