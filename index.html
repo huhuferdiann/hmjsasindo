@@ -4,76 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMJ Sastra Indonesia</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- HEADER -->
     <header>
         <h1>HMJ Sastra Indonesia</h1>
-        <p>Himpunan Mahasiswa Jurusan Sastra Indonesia adalah organisasi yang menyatukan dan mendukung mahasiswa dari program studi Sastra Indonesia dalam mengembangkan kreativitas dan mengekspresikan keahlian literasi.</p>
-        <a href="#learn-more" class="btn">Learn More</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="keanggotaan.html">Keanggotaan</a></li>
+                <li><a href="kegiatan.html">Kegiatan</a></li>
+                <li><a href="dokumentasi.html">Dokumentasi</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#agenda">Agenda</a></li>
-            <li><a href="#proyek">Proyek</a></li>
-            <li><a href="#berita">Berita</a></li>
-            <li><a href="#forum">Forum</a></li>
-            <li><a href="#galeri">Galeri</a></li>
-        </ul>
-    </nav>
+    <!-- BUKU ANIMASI -->
+    <section class="buku-container">
+        <div class="buku">
+            <div class="halaman halaman-kiri"></div>
+            <div class="halaman halaman-kanan"></div>
+            <div class="cover cover-depan">HMJ Sastra</div>
+            <div class="cover cover-belakang"></div>
+        </div>
+    </section>
 
-    <main>
-        <section id="agenda">
-            <h2>Agenda</h2>
-            <div class="event">
-                <h3>Diskusi Sastra Bulanan</h3>
-                <p>Tanggal: 15 November 2023</p>
-                <p>Waktu: 14:00 - 16:00 WIB</p>
-                <p>Tempat: Ruang Rapat Fakultas</p>
-            </div>
-            <div class="event">
-                <h3>Workshop Penulisan Kreatif</h3>
-                <p>Tanggal: 22 November 2023</p>
-                <p>Waktu: 09:00 - 12:00 WIB</p>
-                <p>Tempat: Laboratorium Sastra</p>
-            </div>
-        </section>
+    <!-- TOMBOL NAVIGASI -->
+    <section class="tombol-container">
+        <a href="keanggotaan.html" class="tombol">Keanggotaan</a>
+        <a href="kegiatan.html" class="tombol">Kalender Acara</a>
+    </section>
 
-        <section id="proyek">
-            <h2>Proyek</h2>
-            <p>Proyek terbaru kami adalah penerbitan antologi puisi mahasiswa. Kami mengundang semua anggota untuk berkontribusi.</p>
-            <a href="#" class="btn">Selengkapnya</a>
-        </section>
+    <!-- AUDIO -->
+    <audio id="suara-buku-buka">
+        <source src="audio/flip.mp3" type="audio/mpeg">
+    </audio>
 
-        <section id="berita">
-            <h2>Berita</h2>
-            <article>
-                <h3>Keberhasilan Lomba Menulis Cerpen</h3>
-                <p>Mahasiswa kami berhasil meraih juara pertama dalam lomba menulis cerpen tingkat nasional. Selamat kepada semua peserta!</p>
-                <a href="#" class="btn">Baca Selengkapnya</a>
-            </article>
-        </section>
+    <audio id="suara-buku-tutup">
+        <source src="audio/close.mp3" type="audio/mpeg">
+    </audio>
 
-        <section id="forum">
-            <h2>Forum</h2>
-            <p>Diskusikan topik sastra favorit Anda di forum kami. Bergabunglah dengan komunitas kami dan berbagi ide!</p>
-            <a href="#" class="btn">Masuk ke Forum</a>
-        </section>
+    <!-- SCRIPT -->
+    <script src="script.js"></script>
 
-        <section id="galeri">
-            <h2>Galeri</h2>
-            <div class="gallery">
-                <img src="image1.jpg" alt="Kegiatan HMJ 1">
-                <img src="image2.jpg" alt="Kegiatan HMJ 2">
-                <img src="image3.jpg" alt="Kegiatan HMJ 3">
-            </div>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2023 HMJ Sastra Indonesia. All rights reserved.</p>
-    </footer>
 </body>
 </html>
