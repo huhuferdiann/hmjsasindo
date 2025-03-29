@@ -1,77 +1,105 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HMJ Sastra Indonesia</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
 
-    <!-- Navbar -->
-    <nav>
-        <div class="container">
-            <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Agenda</a></li>
-                <li><a href="#">Project</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Forum</a></li>
-                <li><a href="#">Gallery</a></li>
-            </ul>
-        </div>
-    </nav>
+/* Navbar */
+nav {
+    background: #6A1B9A; /* Warna ungu lebih elegan */
+    padding: 12px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <img src="logo-hmj.png" alt="Logo HMJ" class="logo">
-            <h1>HIMPUNAN MAHASISWA SASTRA INDONESIA</h1>
-            <p>Organisasi mahasiswa yang mewadahi kreativitas, budaya, dan sastra Indonesia.</p>
-            <button class="btn">Learn More</button>
-        </div>
-    </section>
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Agar responsif */
+}
 
-</body>
-</html>
+.nav-links li {
+    margin: 5px 10px;
+}
 
-    <!-- BUKU ANIMASI -->
-    <section class="buku-container">
-        <div class="buku">
-            <div class="halaman halaman-kiri"></div>
-            <div class="halaman halaman-kanan"></div>
-            <div class="cover cover-depan">HMJ Sastra</div>
-            <div class="cover cover-belakang"></div>
-        </div>
-    </section>
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    transition: 0.3s;
+    font-size: 16px;
+}
 
-    <!-- TOMBOL NAVIGASI -->
-    <section class="tombol-container">
-        <a href="keanggotaan.html" class="tombol">Keanggotaan</a>
-        <a href="kegiatan.html" class="tombol">Kalender Acara</a>
-    </section>
+.nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
 
-    <!-- AUDIO -->
-    <audio id="suara-buku-buka">
-        <source src="audio/flip.mp3" type="audio/mpeg">
-    </audio>
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #EDE7F6, #D1C4E9); /* Gradasi lebih halus */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 80px 20px;
+}
 
-    <audio id="suara-buku-tutup">
-        <source src="audio/close.mp3" type="audio/mpeg">
-    </audio> 
-    
-    <div class="book-container">
-    <div class="book">
-        <div class="page page-left"></div>
-        <div class="page page-right"></div>
-    </div>
-</div>
+.logo {
+    width: 120px;
+    margin-bottom: 15px;
+}
 
-<audio id="openSound" src="audio/book-open.mp3"></audio>
-<audio id="closeSound" src="audio/book-close.mp3"></audio>
+h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4A148C;
+    text-transform: uppercase;
+    max-width: 90%;
+}
 
-    <!-- SCRIPT -->
-    <script src="script.js"></script>
+p {
+    font-size: 16px;
+    color: #6A1B9A;
+    margin: 10px 0;
+    max-width: 80%;
+}
 
-</body>
-</html>
+.btn {
+    background: #6A1B9A;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #7B1FA2;
+}
+
+/* Responsif untuk HP */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .logo {
+        width: 100px;
+    }
+}
