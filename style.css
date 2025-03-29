@@ -8,11 +8,18 @@
 
 /* BODY */
 body {
-    background-color: #f8f1e4; /* Warna krem lembut */
-    color: #5a3e2b; /* Warna cokelat tua */
-    text-align: center;
-    padding: 20px;
+    background: black; /* Latar belakang hitam */
+    color: white; /* Warna teks putih */
+    font-family: 'Poppins', sans-serif; /* Gunakan font modern */
 }
+
+/* Tambahkan efek gradasi di bagian atas */
+.header-gradient {
+    width: 100%;
+    height: 300px; /* Sesuaikan tinggi */
+    background: linear-gradient(135deg, #FF4500, #8B00FF); /* Gradasi oranye ke ungu */
+}
+
 
 /* HEADER */
 header {
