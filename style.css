@@ -38,29 +38,38 @@ header {
 }
 
 
+nav {
+    background-color: #5a3e2b; /* Warna latar belakang navbar */
+    padding: 10px 0; /* Jarak atas-bawah navbar */
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
-    padding: 10px 0;
+    justify-content: center; /* Posisikan menu di tengah */
+    align-items: center; /* Pastikan item sejajar */
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    margin: 0 20px; /* Jarak antar menu lebih proporsional */
 }
 
 nav ul li a {
     color: white;
     text-decoration: none;
     font-size: 18px;
-    padding: 5px 10px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px; /* Agar menu sedikit membulat */
     transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #f000ff;
-    border-radius: 5px;
+    background-color: #7a4e39; /* Warna hover lebih kontras */
 }
+
 
 /* BUKU ANIMASI */
 .buku-container {
