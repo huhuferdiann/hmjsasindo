@@ -297,3 +297,38 @@ nav ul li a:hover {
 .gallery img:hover {
     transform: scale(1.1);
 }
+
+/* KONTAK */
+.kontak-container {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.kontak-container h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #5a3e2b;
+}
+
+.kontak-container p {
+    font-size: 16px;
+    color: #8b5e3c;
+    margin-bottom: 20px;
+}
+
+/* Tombol Media Sosial */
+.social-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-buttons a img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-buttons a img:hover {
+    transform: scale(1.1);
+}
