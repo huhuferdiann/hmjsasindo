@@ -42,7 +42,7 @@ nav {
     background-color: #5a3e2b;
     padding: 10px 0;
     width: 100%;
-    position: fixed; /* Biar tetap di atas */
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 1000;
