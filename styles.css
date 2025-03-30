@@ -211,44 +211,55 @@ a {
 }
 
 /* ========== Social Media ========== */
-.social-media {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3f3faa;
+    color: white;
     text-align: center;
-    margin-top: 30px;
+    margin: 0;
+    padding: 0;
 }
 
-.social-media h2 {
-    font-size: 22px;
-    color: #4a3f35;
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
 }
 
 .social-icons {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
 }
 
 .social-icons img {
-    width: 50px;
-    transition: transform 0.3s ease, filter 0.3s ease;
-    filter: grayscale(100%);
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease;
 }
 
-.social-icons a:hover img {
+.social-icons img:hover {
     transform: scale(1.2);
-    filter: grayscale(0%);
 }
 
-/* Efek Getaran */
-@keyframes shake {
-    0% { transform: rotate(0); }
-    25% { transform: rotate(-5deg); }
-    50% { transform: rotate(5deg); }
-    75% { transform: rotate(-5deg); }
-    100% { transform: rotate(0); }
-}
-
-.social-icons a:hover img {
-    animation: shake 0.3s ease-in-out;
 }
 
 /* ========== Animasi Masuk ========== */
