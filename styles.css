@@ -170,7 +170,7 @@ a {
 /* ========== Contact Section ========== */
 .contact {
     text-align: center;
-    padding: 50px;
+    padding: 25px;
 }
 
 .contact h2 {
@@ -187,13 +187,13 @@ a {
 }
 
 .contact-info img {
-    width: 300px;
+    width: 30px;
     height: auto;
     border-radius: 10px;
 }
 
 .contact-details {
-    max-width: 400px;
+    max-width: 40px;
 }
 
 .contact-details p {
